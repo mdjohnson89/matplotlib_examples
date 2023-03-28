@@ -19,4 +19,17 @@ for line in data:
     elif to_read[0] == country2:
         y2_data.append(float(to_read[3])*100)
 
-print(x_data, y1_data, y2_data)
+fig, axs = plt.subplots(nrows=2, ncols=1, figsize=(8, 4))
+
+axs[0].plot(x_data, y1_data)
+axs[0].set_title(f'{country1}')
+axs[0].set_ylim((0,100))
+
+axs[1].plot(x_data, y2_data)
+axs[1].set_title(f'{country2}')
+axs[1].set_ylim((0,100))
+
+plt.tight_layout()
+plt.show()
+
+
