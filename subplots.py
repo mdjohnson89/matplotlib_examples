@@ -19,7 +19,7 @@ axs[0, 1].plot(x, y2)
 axs[0, 1].set_title("Linear")
 
 # Third subplot (bottom-left)
-axs[1, 0].plot(x, y3)
+axs[1, 0].scatter(x, y3)
 axs[1, 0].set_title("Inverted Quadratic")
 
 # Fourth subplot (bottom-right)

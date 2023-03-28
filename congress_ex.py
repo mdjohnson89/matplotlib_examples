@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 # Read and process the data
 with open('women_in_congress.csv') as file:
     # Reads in csv as a list of strings.
+    #header = file.readline()
     data = file.readlines()
 
 x_data = []
