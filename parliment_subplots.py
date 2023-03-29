@@ -25,7 +25,7 @@ axs[0].plot(x_data, y1_data)
 axs[0].set_title(f'{country1}')
 axs[0].set_ylim((0,100))
 
-axs[1].plot(x_data, y2_data)
+axs[1].plot(x_data, y2_data, 'x--m')
 axs[1].set_title(f'{country2}')
 axs[1].set_ylim((0,100))
 
