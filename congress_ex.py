@@ -20,12 +20,16 @@ for line in data:
     y_data.append(float(to_read[1].strip())*100)
 
 # Look and labels
+print(plt.style.available)
+plt.style.use('grayscale')
 plt.title('Percentage of Women in US Congress 1997 - 2019')
 plt.xlabel = 'Year (starting 1997)'
 plt.ylabel = 'Percentage of Congress that is Women'
 plt.grid()
 plt.xticks(x_data, rotation='vertical')
 plt.ylim((0, 100))
+
+
 
 # Create the plot
 plt.plot(x_data, y_data)
